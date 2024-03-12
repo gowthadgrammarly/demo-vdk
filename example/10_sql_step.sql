@@ -10,4 +10,6 @@
 -- Parameters will be automatically replaced if there is a corresponding value existing in the IJobInput properties.
 
 --CREATE TABLE IF NOT EXISTS hello_world (id NVARCHAR);
-SELECT * FROM hello_world;
+--SELECT * FROM hello_world;
+--describe  hello_world;
+pragma table_info('hello_world');
