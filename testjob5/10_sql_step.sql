@@ -9,4 +9,4 @@
 -- A valid query parameter looks like → {parameter}.
 -- Parameters will be automatically replaced if there is a corresponding value existing in the IJobInput properties.
 
-CREATE TABLE IF NOT EXISTS hello_world_from_vdk (id NVARCHAR);
+CREATE TABLE IF NOT EXISTS hello_world_from_vdk_job5 (id NVARCHAR);
