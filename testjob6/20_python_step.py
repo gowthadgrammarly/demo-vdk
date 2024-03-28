@@ -28,8 +28,6 @@ def run(job_input: IJobInput):
     print("current time:-", ct)
     # Write your python code inside here ... for example:
     job_input.send_object_for_ingestion(
-    payload=dict(id="Hello World! {}".format(ct)), destination_table="hello_world_from_vdk"
-)
-    job_input.send_object_for_ingestion(
-        payload=dict(id="Hello World!"), destination_table="hello_world_from_vdk"
+    payload=dict(id="Hello World! JOB6 {}".format(ct)), destination_table="hello_world_from_vdk"
     )
+
