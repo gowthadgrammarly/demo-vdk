@@ -1,6 +1,7 @@
 # Copyright 2023-2024 Broadcom
 # SPDX-License-Identifier: Apache-2.0
 import logging
+from datetime import datetime
 
 from vdk.api.job_input import IJobInput
 
@@ -19,8 +20,9 @@ def run(job_input: IJobInput):
     See IJobInput documentation for more details.
     """
     log.info(f"Starting job step {__name__}")
-
+    ct = datetime.datetime.now()
+    print("current time:-", ct)
     # Write your python code inside here ... for example:
     job_input.send_object_for_ingestion(
-        payload=dict(id="Hello World!"), destination_table="hello_world_from_vdk_job5"
+        payload=dict(id="Hello World! {}".format(ct)), destination_table="hello_world_from_vdk_job5"
     )
