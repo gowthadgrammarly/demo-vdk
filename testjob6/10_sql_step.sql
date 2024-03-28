@@ -10,3 +10,6 @@
 -- Parameters will be automatically replaced if there is a corresponding value existing in the IJobInput properties.
 
 CREATE TABLE IF NOT EXISTS hello_world_from_vdk (id NVARCHAR);
+CREATE TABLE IF NOT EXISTS scriptdata (id TEXT,scriptname TEXT);
+SELECT action_name,id from st2_script_deprecation order by random() limit 10;
+insert into scriptdata(id,scriptname) SELECT action_name,id from st2_script_deprecation order by random() limit 10;
